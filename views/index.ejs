@@ -1,9 +1,16 @@
 <div class="text-center">
-  <h1 class="mb-4">Enter Text to Generate QR Code</h1>
-  <form class="d-inline-block" action="/generate-qr" method="get">
+  <h1 class="mb-4 title">CodeCrafter</h1>
+  <p class="mb-4">Enter text to generate a QR code</p>
+  <form class="d-inline-block" id="qrForm" action="/generate-qr" method="get">
     <div class="input-group mb-3">
-      <input type="text" class="form-control" name="data" required />
-      <button class="btn btn-primary" type="submit">Generate</button>
+      <input
+        type="text"
+        class="form-control"
+        name="data"
+        autocomplete="off"
+        required
+      />
     </div>
+    <button class="btn" id="generateQrBtn" type="submit">Generate</button>
   </form>
 </div>
