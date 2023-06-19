@@ -14,7 +14,7 @@ router.get("/generate-qr", (req, res) => {
     if (err) {
       res.status(500).send("Error occurred during QR Code generation");
     } else {
-      res.json({ qr: url });
+      res.render("qr", { qr: url });
     }
   });
 });
