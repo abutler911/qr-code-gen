@@ -1,7 +1,7 @@
 const express = require("express");
 const qrcode = require("qrcode");
 const expressLayouts = require("express-ejs-layouts");
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const app = express();
 
 const qrRoute = require("./routes/qr-code-routes");
